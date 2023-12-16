@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form </title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Student Form</h1>
+        <table border="2">
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" id="Nameb"></td>
+            </tr>
+            <tr>
+                <td><label for="">Age</label></td>
+                <td><input type="number" id="Ageb"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td>
+                    
+                    <input type="radio" id="male" name="Gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="Gender">
+                    <label for="female">FeMale</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Language</label></td>
+                <td>
+                    <input type="checkbox" id="tamil"  value="Tamil" name="Language" >
+                    <label for="tamil">Tamil</label>
+
+                    <input type="checkbox" id="english" value="english" name="Language">
+                    <label for="english">English</label>
+
+                    <input type="checkbox" id="hindi" value="hindi" name="Language" >
+                    <label for="hindi">Hindi</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width: 100%;background-color: blue;color: #fff;" onclick="saveRecord()">Submit</button></td>
+            </tr>
+        </table>
+            <br><br>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Language</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+        </table>
+    </center>
+
+    <script src="./student.js"></script>
+</body>
+
+</html>
